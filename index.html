@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="font-serif bg-white">
+    <!--================== NAVBAR================== -->
+  <nav class="z-40 fixed w-full p-5 bg-gray-200 shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+        <img class="h-10 inline"
+          src="./images/logo.jpg">
+        
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center  md:z-auto md:static absolute bg-gray-200 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-6 md:my-0">
+        <a href="index.html" class="text-xl hover:text-cyan-500 duration-500">Home</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="product.html" class="text-xl hover:text-cyan-500 duration-500">Products</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="#about" class="text-xl hover:text-cyan-500 duration-500">About</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="contact.html" class="text-xl hover:text-cyan-500 duration-500">Contact</a>
+      </li>
+      <!-- <li class="mx-4 my-6 md:my-0">
+        <a href="#" class="text-xl hover:text-cyan-500 duration-500">BLOG'S</a>
+      </li> -->
+
+      <!-- <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6 py-2 mx-4 hover:bg-cyan-500 rounded ">
+        Get started
+      </button> -->
+<!-- <h2 class=""></h2> -->
+    </ul>
+  </nav>
+<!-- ============BANNER============== -->
+ <div class="min-h-screen bg-cover bg-center" style="background-image: url(./images/banner.jpg);">
+    <div class="bg-black bg-opacity-50 text-neutral-content text-center flex items-center justify-center min-h-screen">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-8xl font-bold text-gray-50 my-14">
+            Elevate Your Home’s Style
+        </h1>
+        <p class="mb-5 font-semibold mt-1.5 text-gray-50">
+          Your home is your sanctuary, and Decor by Miller is here to help you make it truly yours. With a focus on premium craftsmanship and timeless designs, we offer a wide range of decor solutions tailored to enhance your living spaces. Explore our collection and find pieces that bring beauty, comfort, and functionality to your home.
+        </p>
+  
+        <button class="px-6 py-2 border-2 bg-slate-100 border-gray-600 text-gray-600  hover:bg-gray-500 hover:text-white transition-all duration-300 rounded mt-1.5 mr-5">
+          Explore store!
+        </button>
+      </div>
+    </div>
+  </div> 
+ 
+  <!-- ===============Explore products================== -->
+  <section>
+    <div class="mx-0.5 text-black">
+      <h1 id="upcomingEvents" class="text-2xl md:text-3xl lg:text-5xl mx-5 py-5 text-center font-semibold mt-5">
+        Our Products
+      </h1>
+      <div class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 gap-6 mx-0.5">
+        
+        <!--Couch-->
+        <div class="bg-white shadow-xl rounded-lg">
+          <figure class="px-5 pt-5">
+            <img src="./Images/couch.jpg" alt="Wingback Yellow Couch" class="rounded-xl" />
+          </figure>
+          <div class="p-6 text-left">
+            <h3 class="text-2xl font-semibold">Couch</h3>
+            <p class="mt-3">Wingback Yellow Couch</p>
+            <div class="mt-3 flex items-center">
+              <button class="buy-button px-6 py-2 border-2 bg-white border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 rounded">
+                <a href="product.html">Buy Now!</a>
+              </button>
+              <p class="ml-20 text-lg font-semibold font-sans">$<span>567</span></p>
+            </div>
+          </div>
+        </div>
+        
+        
+  
+     <!-- Dinning Table -->
+        <div class="bg-white shadow-xl rounded-lg">
+          <figure class="px-5 pt-5">
+            <img src="./Images/dinning.jpg" alt="Lofoten Islands, Norway" class="rounded-xl" />
+          </figure>
+          <div class="p-6 text-left">
+            <h2 class="text-2xl font-semibold">Dinning Table</h2>
+            <p class="mt-3">Dinning Table for Two</p>
+            <div class="mt-3 flex items-center">
+              <button class="px-6 py-2 border-2 bg-white border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 rounded">
+                <a href="product.html">Buy Now!</a>
+              </button>
+              <p class="ml-20 text-lg font-semibold font-sans">$<span>499</span></p>
+            </div>
+          </div>
+        </div>
+  
+
+        <div class="bg-white shadow-xl rounded-lg">
+          <figure class="px-5 pt-5">
+            <img src="./Images/sofa1.jpg" alt="Sofa" class="rounded-xl" />
+          </figure>
+          <div class="p-6 text-left">
+            <h3 class="text-2xl font-semibold">Sofa</h3>
+            <p class="mt-3">Beige Living Room Sofa</p>
+            <div class="mt-3 flex items-center">
+              <button class="buy-button px-6 py-2 border-2 bg-white border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 rounded">
+                <a href="product.html">Buy Now!</a>
+              </button>
+              <p class="ml-20 text-lg font-semibold font-sans">$<span>456</span></p>
+            </div>
+          </div>
+        </div>
+  
+
+        <div class="bg-white shadow-xl rounded-lg">
+          <figure class="px-5 pt-5">
+            <img src="./Images/luxury-chair.jpg" alt="Luxury Chair" class="rounded-xl" />
+          </figure>
+          <div class="p-6 text-left">
+            <h3 class="text-2xl font-semibold">Luxury Chair</h3>
+            <p class="mt-3">Vintage Luxury Chair</p>
+            <div class="mt-3 flex items-center">
+              <button class="buy-button px-6 py-2 border-2 bg-white border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 rounded">
+                <a href="product.html">Buy Now!</a>
+              </button>
+              <p class="ml-20 text-lg font-semibold font-sans">$<span>199</span></p>
+            </div>
+          </div>
+        </div>
+  
+       
+        <div class="bg-white shadow-xl rounded-lg">
+          <figure class="px-5 pt-5">
+            <img src="./Images/sofa2.jpg" alt="Single Sofa" class="rounded-xl" />
+          </figure>
+          <div class="p-6 text-left">
+            <h3 class="text-2xl font-semibold">Single Sofa</h3>
+            <p class="mt-3">Sofa Chairs with Cushions</p>
+            <div class="mt-3 flex items-center">
+              <button class="buy-button px-6 py-2 border-2 bg-white border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 rounded">
+                <a href="product.html">Buy Now!</a>
+              </button>
+              <p class="ml-20 text-lg font-semibold font-sans">$<span>600</span></p>
+            </div>
+          </div>
+        </div>
+  
+        
+        <div class="bg-white shadow-xl rounded-lg">
+          <figure class="px-5 pt-5">
+            <img src="./Images/stool.jpg" alt="Stool" class="rounded-xl" />
+          </figure>
+          <div class="p-6 text-left">
+            <h3 class="text-2xl font-semibold">Stool</h3>
+            <p class="mt-3">Classic Wooden Table</p>
+            <div class="mt-3 flex items-center">
+              <button class="buy-button  px-6 py-2 border-2 bg-white border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 rounded">
+                <a href="product.html">Buy Now!</a>
+              </button>
+              <p class="ml-20 text-lg font-semibold font-sans">$<span>766</span></p>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+    <div class="text-center mt-10">
+      <a href="product.html" class="px-6 py-2 border-2 bg-white border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-white transition-all duration-300 rounded">Explore Store!</a>
+    </div>
+  </section> 
+   
+  
+
+<br>
+<!-- About us -->
+<div id="about" class="flex flex-col sm:grid-cols-1 md:flex-row justify-between items-center h-auto md:h-screen bg-gray-100 p-8">
+  <!-- Left Section: About Us -->
+  <div class="w-full md:w-1/2 mb-8 md:mb-0 md:pr-8">
+    <h3 class="text-4xl font-bold mb-4">About us</h3>
+    <p class="text-lg leading-relaxed">
+      At Decor by Miller, we believe your home should reflect your unique style. Our mission is to offer high-quality decor pieces that blend beauty with functionality, helping you create spaces that are both stylish and comfortable. From timeless classics to modern trends, we curate a collection designed to inspire and transform your home into a place you'll love.
+    </p>
+  </div>
+  
+  <!-- Right Section: Images -->
+  <div class="relative w-full md:w-1/2 flex justify-center md:h-full" style="margin-top: 140px;">
+    <!-- First image -->
+    <img src="./images/team1.jpg" alt="team"
+      class="absolute top-0 left-0 w-70 h-64 transition-all duration-500 ease-in-out transform hover:z-20 hover:scale-110 z-10 shadow-lg">
+    
+    <!-- Second image -->
+    <img src="./images/team2.jpg" alt="Sofa"
+      class="absolute top-6 left-16 w-70 h-64 transition-all duration-500 ease-in-out transform hover:z-20 hover:scale-110 z-0 shadow-lg">
+  </div>
+</div>
+
+
+<!-- NEWSSETLER -->
+<div class="flex justify-center items-center  bg-gray-100  py-6 mb-10">
+  <form class="items-center content-center bg-white p-6 rounded-lg shadow-md">
+    <h2 class="text-lg font-semibold mb-4 text-center">Newsletter</h2>
+    <div class="w-full space-y-2">
+      <label class="block text-gray-700">
+        <span class="block text-sm font-medium">Enter your email address</span>
+      </label>
+      <div class="flex">
+        <input
+          type="email"
+          placeholder="username@site.com"
+          class="flex-1 px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+        <button type="submit"
+          class="px-4 py-2 bg-gray-600 text-white font-semibold rounded-r-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Footer -->
+<footer class="bg-white text-black p-10">
+  <div class="flex flex-wrap justify-between">
+    <aside class="w-full md:w-1/4 mb-6 md:mb-0">
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        class="fill-current text-gray-700">
+        <path
+          d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
+      </svg>
+      <p class="mt-4">
+        ACME Industries Ltd.
+        <br />
+        Providing reliable tech since 1992
+      </p>
+    </aside>
+    <nav class="w-full md:w-1/4 mb-6 md:mb-0">
+      <h6 class="font-bold mb-2">Services</h6>
+      <a class="block text-black hover:underline mb-1">Branding</a>
+      <a class="block text-black hover:underline mb-1">Design</a>
+      <a class="block text-black hover:underline mb-1">Marketing</a>
+      <a class="block text-black hover:underline">Advertisement</a>
+    </nav>
+    <nav class="w-full md:w-1/4 mb-6 md:mb-0">
+      <h6 class="font-bold mb-2">Company</h6>
+      <a class="block text-black hover:underline mb-1">About us</a>
+      <a class="block text-black hover:underline mb-1">Contact</a>
+      <a class="block text-black hover:underline mb-1">Jobs</a>
+      <a class="block text-black hover:underline">Press kit</a>
+    </nav>
+    <nav class="w-full md:w-1/4">
+      <h6 class="font-bold mb-2">Legal</h6>
+      <a class="block text-black hover:underline mb-1">Terms of use</a>
+      <a class="block text-black hover:underline mb-1">Privacy policy</a>
+      <a class="block text-black hover:underline">Cookie policy</a>
+    </nav>
+  </div>
+</footer>
+
+
+
+
+
+  
+  
+  
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+</body>
+
+</html>
